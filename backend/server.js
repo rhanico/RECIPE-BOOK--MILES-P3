@@ -1,7 +1,9 @@
 const express = require( "express" );
 
 const mongoose = require( "mongoose" );
+
 require( "dotenv" ).config()
+const routes = require( "./routes/recipeReoute" )
 
 const cors = require( "cors" )
 
@@ -15,4 +17,6 @@ mongoose.connect(process.env.MONGO_URI)
 .then(() => console.log("Connected to the Kitchen!"))
 .catch((err) => console.log(err));
 
-app.listen( PORT, () => console.log( "LIstening at ${PORT}"));
+app.use( "/api", routes);
+
+app.listen( PORT, () => console.log( "Listening at ${PORT}"));
