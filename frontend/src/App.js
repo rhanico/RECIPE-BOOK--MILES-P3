@@ -1,11 +1,14 @@
-import React from 'react'
+import React from 'react';
+import NavRoutes from './routes/Routes'; 
 
-export default function App() {
+
+function App() {
   return (
-   <main>
-    <h1> Kitchen's Dairy </h1>
-   </main>
-
-
-  )
+    <main>
+      <h1>Kitchen's Dairy</h1>
+      <NavRoutes /> {}
+    </main>
+  );
 }
+
+export default App;

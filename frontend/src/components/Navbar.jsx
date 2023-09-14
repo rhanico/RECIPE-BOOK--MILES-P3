@@ -11,6 +11,9 @@ function Navbar() {
           <Link to="/">HOME</Link>
         </li>
         <li>
+          <Link to="/blog-post">KITCHEN'S DIARY</Link>
+        </li>
+        <li>
           <Link to="/recipes">COOK BOOK</Link>
         </li>
         <li>
