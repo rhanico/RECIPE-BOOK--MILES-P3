@@ -16,6 +16,6 @@ router.post( "/save", saveRecipes );
 
 router.put( "/update/:id", updateRecipes );
 
-router.delete( "/delete/id:", deleteRecipes);
+router.delete("/delete/:id", deleteRecipes);
 
 module.exports = router;

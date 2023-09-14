@@ -1,5 +1,6 @@
 import React from 'react';
-import NavRoutes from './routes/Routes'; 
+import NavRoutes from './routes/Routes';
+import "./app.css"
 
 
 function App() {
